@@ -12,7 +12,7 @@ export default class GifsService {
 
   private _tagHistory : Array<string> = [];
   private base_url : string = 'https://api.giphy.com/v1/gifs';
-  private api : string = '8hE7hev4cqBL7ZR94k1PvlvKlXldE2q9';
+  private api : string = '';
   private _photoList : Array<Foto> = [];
 
   constructor(private http:HttpClient) { 

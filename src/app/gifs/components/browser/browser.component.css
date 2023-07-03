@@ -1,0 +1,8 @@
+#nav{
+    width: 75%;
+    position: fixed;
+    min-height: 61px;
+    max-height: 66px;
+    background-color: var(--bs-dark);
+    z-index: 2;
+}

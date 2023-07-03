@@ -1,0 +1,27 @@
+#sidebar{
+    height: 100vh;
+    overflow: scroll;
+}
+
+#sidebar::-webkit-scrollbar{
+    width: 0.5rem;
+    border: 2px black solid;
+}
+
+#sidebar::-webkit-scrollbar:horizontal{
+    display: none;
+}
+
+#sidebar::-webkit-scrollbar:vertical{
+    background-color: white;
+}
+
+#sidebar::-webkit-scrollbar-track{
+    background-color: var(--bs-dark);
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--bs-secondary);
+    border: 1px solid black;
+    border-radius: 3px;
+}

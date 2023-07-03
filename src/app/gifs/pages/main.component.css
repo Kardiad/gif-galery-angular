@@ -1,0 +1,32 @@
+#contenedor{
+    height: 100vh;
+    overflow: scroll;
+    background-color: var(--bs-secondary);
+}
+
+
+#contenedor::-webkit-scrollbar{
+    width: 0.5rem;
+    border: 2px black solid;
+}
+
+#contenedor::-webkit-scrollbar:horizontal{
+    display: none;
+}
+
+#contenedor::-webkit-scrollbar:vertical{
+    background-color: white;
+}
+
+#contenedor::-webkit-scrollbar-track{
+    background-color: var(--bs-dark);
+}
+
+#contenedor::-webkit-scrollbar-thumb {
+    background-color: var(--bs-secondary);
+    border: 1px solid black;
+}
+
+#lista{
+    margin-top: 10vh;
+}

@@ -1,0 +1,12 @@
+<div 
+    *ngIf="!hasLoaded"
+    class="text-center bg-dark p-3">
+    <div class="spinner-border text-secondary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<img src="{{url}}"
+     class="card-img-top animate__animated animate__fadeIn"
+     (load)="onLoad()"
+     [ngStyle] ="{display: hasLoaded ? '' : 'none'}">

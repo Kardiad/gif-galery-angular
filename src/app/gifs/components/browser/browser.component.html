@@ -1,0 +1,12 @@
+<nav 
+class="nav nav-bar d-flex flex-column justify-content-center align-items-center" 
+id="nav">
+    <form class="col-11" (submit)="setTopic()">
+        <input class="form-control" 
+                type="text"
+                name="search" 
+                id="search"
+                placeholder="Busca tu gif"
+                [(ngModel)]="search">
+    </form>
+</nav>

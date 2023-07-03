@@ -1,0 +1,23 @@
+<div class="bg-dark text-light" id="sidebar">
+    <h1 class="text-center mb-3">GifApp</h1>
+    <hr class="my-3 border border-light border-2">
+    <ul class="list-group">
+        <li class="mb-2" 
+            *ngFor="let tag of getTags;
+                    let first = first">
+            <button 
+                class="btn btn-dark w-100"
+                [disabled]="first" 
+                [ngClass]="first?'active':''" 
+                #tag 
+                (click)="search(tag)">
+                {{tag | titlecase}}
+            </button>    
+        </li>
+    </ul>
+    <button 
+        class="btn btn-outline-danger w-100" 
+        (click)="clearHistoric()"> 
+        <fa-icon [icon]="propDelete"></fa-icon>
+    </button>
+</div>
